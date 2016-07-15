@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru-RU" class="no-js">
+<head>
+  <%= csrf_meta_tags %>
+  <!-- ==============================================
+  Title and Meta Tags
+  =============================================== -->
+  <meta charset="utf-8">
+  <title><%= t('meta.title') %></title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="keywords" content="<%= t('meta.keywords') %>">
+  <meta name="description" content="<%= t('meta.description') %>">
+
+  <!-- ==============================================
+  Favicons
+  =============================================== -->
+  <link rel="shortcut icon" href="assets/images/favicon.ico">
+  <link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="assets/images/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="assets/images/apple-touch-icon-114x114.png">
+
+  <!-- ==============================================
+  CSS
+  =============================================== -->
+  <%= stylesheet_link_tag 'bootstrap.min' %>
+  <%= stylesheet_link_tag 'font-awesome' %>
+  <%= stylesheet_link_tag 'flexslider' %>
+  <%= stylesheet_link_tag 'styles' %>
+
+
+  <!-- ==============================================
+  Fonts
+  =============================================== -->
+  <link href='http://fonts.googleapis.com/css?family=Roboto:100,300,100italic,400,300italic' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Raleway:400,100,200,300' rel='stylesheet' type='text/css'>
+
+  <!-- ==============================================
+  JS
+  =============================================== -->
+
+  <!--[if lt IE 9]>
+  <%= javascript_include_tag 'respond.min' %>
+  <![endif]-->
+
+  <%= javascript_include_tag 'modernizr.min' %>
+
+</head>
+<body>
+<%= yield %>
+</body>
+</html>

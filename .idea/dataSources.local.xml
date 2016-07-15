@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal">
+    <data-source name="Rails landing: test" uuid="84249711-f2e9-457f-a3be-8f38a4116201">
+      <user-name>username</user-name>
+      <user-password>dfdadfcbdfd9dfd9dfdddfc5dfd8dfce</user-password>
+    </data-source>
+    <data-source name="Rails landing: production" uuid="3b85bc50-831f-4786-8aa4-f3bda811a49f">
+      <user-name>landing</user-name>
+      <user-password>df96df8fdf97df8adfefdfe4dffcdff1df8ddfe6dfebdfe4dfeedfe3dfe4dfeddff5dfeedfebdffedfebdfe8dfebdff9dfefdff5dffadfebdff9dff9dffddfe5dff8dfeedf8ddff7df8adf8fdf94</user-password>
+    </data-source>
+    <data-source name="Rails landing: development" uuid="d8d66249-c4c5-40cd-bcd5-7410ccf42dc7">
+      <secret-storage>memory</secret-storage>
+      <user-name>username</user-name>
+      <schema-pattern>landing_development.pg_catalog landing_development.public</schema-pattern>
+      <default-schemas>landing_development.public</default-schemas>
+    </data-source>
+  </component>
+</project>
