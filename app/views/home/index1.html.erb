@@ -1,0 +1,783 @@
+<body data-spy="scroll" data-target="#main-nav" data-offset="400">
+
+<!--=== PAGE PRELOADER ===-->
+<div id="page-loader"><span class="page-loader-gif"><%= t('loading') %></span></div>
+
+<!-- ==============================================
+MAIN NAV
+=============================================== -->
+
+<div id="main-nav" class="navbar">
+  <div class="container">
+
+    <div class="navbar-header">
+
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#site-nav">
+        <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+      </button>
+
+      <!-- ======= LOGO ========-->
+      <a class="navbar-brand scrollto" href="#about">
+
+        <img class="site-logo" src="<%= image_path 'logo-small1.png' %>" alt="logo" />
+      </a>
+
+    </div>
+
+    <div id="site-nav" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav navbar-right">
+        <li class="sr-only">
+          <a href="#home" class="scrollto"><%= t('navigation.home') %></a>
+        </li>
+        <li>
+          <a href="#about" class="scrollto"><%= t('navigation.about') %></a>
+        </li>
+        <li>
+          <a href="#portfolio" class="scrollto"><%= t('navigation.porfolio') %></a>
+        </li>
+        <li>
+          <a href="#pricing" class="scrollto"><%= t('navigation.pricing') %></a>
+        </li>
+        <li>
+          <a href="#contact" class="scrollto"><%= t('navigation.contact') %></a>
+        </li>
+      </ul>
+    </div><!--End navbar-collapse -->
+
+  </div><!--End container -->
+
+</div><!--End main-nav -->
+
+<!-- ==============================================
+ABOUT
+=============================================== -->
+<section id="about" class="gray-bg padding-top-bottom">
+
+  <div class="container">
+
+    <h1 class="section-title"><%= t('about.title') %></h1>
+    <p class="section-description"><%= t('about.description') %></p>
+
+    <img class="img-responsive img-center scrollimation fade-up" src="<%= image_path 'logo1.png' %>" alt="" />
+
+    <div class="row">
+
+      <div class="col-sm-4">
+
+        <h3><%= t('about.block1.h3') %></h3>
+        <p>
+          <%= t('about.block1.p') %>
+          <br/><a class="scrollto" href="#features"><%= t('about.lean_more') %></a>
+        </p>
+      </div>
+
+      <div class="col-sm-4">
+
+        <h3><%= t('about.block2.h3') %></h3>
+        <p>
+          <%= t('about.block2.p') %>
+          <br/><a class="scrollto" href="#features"><%= t('about.lean_more') %></a>
+        </p>
+      </div>
+
+      <div class="col-sm-4">
+
+        <h3><%= t('about.block3.h3') %></h3>
+        <p>
+          <%= t('about.block3.p') %>
+          <br/><a class="scrollto" href="#features"><%= t('about.lean_more') %></a>
+        </p>
+
+      </div>
+
+    </div><!--End row-->
+
+
+  </div><!--End container -->
+
+
+</section><!--End Call to Action -->
+
+<!-- ==============================================
+FEATURES
+=============================================== -->
+<section id="features" class="white-bg padding-top-bottom">
+
+  <div class="container features">
+
+    <h2 class="section-title"><%= t('features.title') %></h2>
+    <p class="section-description"><%= t('features.description') %></p>
+
+    <div class="row">
+
+      <div class="col-sm-5 col-sm-offset-1 scrollimation fade-right">
+
+        <div class="media">
+          <div class="icon pull-right">
+            <i class="media-object icon-1 fa fa-star-o"></i>
+            <i class="media-object icon-2 fa fa-star"></i>
+          </div>
+
+          <div class="media-body text-right">
+            <h4><%= t('features.item1.title') %></h4>
+            <p><%= t('features.item1.content') %></p>
+          </div>
+        </div>
+
+        <div class="media">
+          <div class="icon pull-right">
+            <i class="media-object icon-1 fa fa-mobile"></i>
+            <i class="media-object icon-2 fa fa-desktop"></i>
+          </div>
+
+          <div class="media-body text-right">
+            <h4><%= t('features.item2.title') %></h4>
+            <p><%= t('features.item2.content') %></p>
+          </div>
+        </div>
+
+        <div class="media">
+          <div class="icon pull-right">
+            <i class="media-object icon-1 fa fa-leaf"></i>
+            <i class="media-object icon-2 fa fa-pencil"></i>
+          </div>
+
+          <div class="media-body text-right">
+            <h4><%= t('features.item3.title') %></h4>
+            <p><%= t('features.item3.content') %></p>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="col-sm-5 scrollimation fade-left">
+
+        <div class="media">
+          <div class="icon pull-left">
+            <i class="media-object icon-1 fa fa-heart-o"></i>
+            <i class="media-object icon-2 fa fa-heart"></i>
+          </div>
+
+          <div class="media-body">
+            <h4><%= t('features.item4.title') %></h4>
+            <p><%= t('features.item4.content') %></p>
+          </div>
+        </div>
+
+        <div class="media">
+          <div class="icon pull-left">
+            <i class="media-object icon-1 fa fa-cog"></i>
+            <i class="media-object icon-2 fa fa-cogs"></i>
+          </div>
+
+          <div class="media-body">
+            <h4><%= t('features.item5.title') %></h4>
+            <p><%= t('features.item5.content') %></p>
+          </div>
+        </div>
+
+        <div class="media">
+          <div class="icon pull-left">
+            <i class="media-object icon-1 fa fa-usd"></i>
+            <i class="media-object icon-2 fa fa-eur"></i>
+          </div>
+
+          <div class="media-body">
+            <h4><%= t('features.item6.title') %></h4>
+            <p><%= t('features.item6.content') %></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <p class="text-center"><a class="btn btn-quattro scrollto" href="#choose-us"><%= t('features.why_choose_us') %></a></p>
+
+  </div>
+
+</section>
+
+<!-- ==============================================
+CALL TO ACTION
+=============================================== -->
+<section id="choose-us" class="parallax-bg padding-top-bottom cta-image" data-parallax-background="<%= image_path 'light-abstract.jpg' %>" data-stellar-background-ratio=".7">
+
+  <div class="container">
+
+    <div class="row">
+
+      <div class="col-sm-6 scrollimation fade-right">
+
+        <img class="img-responsive img-center" src="<%= image_path 'logo2.png' %>" alt=""/>
+
+      </div>
+
+      <div class="col-sm-6 scrollimation fade-left d1">
+
+        <h2 class="big-title"><%= t('choose_us.title') %></h2>
+        <p><%= t('choose_us.p1') %></p>
+        <p><%= t('choose_us.p2') %></p>
+
+        <a class="btn btn-quattro scrollto" href="#portfolio"><i class="fa fa-arrow-down"></i><%= t('choose_us.see') %></a>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ==============================================
+PORTFOLIO
+=============================================== -->
+<section id="portfolio" class="padding-top-bottom">
+
+  <div class="container">
+
+    <h2 class="section-title"><%= t('portfolio.title') %></h2>
+
+    <!--==== Portfolio Filters ====-->
+    <div id="filter-works">
+      <ul>
+        <li class="active scrollimation fade-right d1">
+          <a href="#" data-filter="*"><%= t('portfolio.filter.all') %></a>
+        </li>
+        <li class="scrollimation fade-right">
+          <a href="#" data-filter="._complex"><%= t('portfolio.filter.complex') %></a>
+        </li>
+        <li class="scrollimation fade-left">
+          <a href="#" data-filter="._portal"><%= t('portfolio.filter.portal') %></a>
+        </li>
+        <li class="scrollimation fade-left d1">
+          <a href="#" data-filter="._simple"><%= t('portfolio.filter.simple') %></a>
+        </li>
+      </ul>
+    </div><!--End portfolio filters -->
+
+    <!--==== Project Preview ====-->
+    <div id="project-preview">
+
+      <span class="close-preview">&times;</span>
+
+      <h3 id="project-title"></h3>
+
+      <div id="project-slider" class="flexslider"></div>
+
+      <div id="project-content"></div>
+
+    </div><!--Project Preview -->
+
+  </div>
+
+  <div class="masonry-wrapper">
+
+    <div id="projects-container">
+
+      <article class="project-item _complex">
+
+        <img class="img-responsive project-image" src="<%= image_path 'porfolio/item1/thumb1.png' %>" alt=""><!--Project thumb -->
+
+        <div class="hover-mask">
+          <h3 class="project-title"><%= t('portfolio.item1.title') %></h3><!--Project Title -->
+          <p><%= t('portfolio.item1.short_description') %></p><!--Project Subtitle -->
+        </div>
+
+        <!--==== Project Preview HTML ====-->
+
+        <div class="sr-only project-description" data-images="<%= image_path 'porfolio/item1/slide1.png' %>,<%= image_path 'porfolio/item1/slide2.png' %>,<%= image_path 'porfolio/item1/slide3.png' %>" >
+
+          <p><%= t('portfolio.item1.description') %></p>
+
+          <p class="text-center"><a class="btn btn-quattro" target="_blank" href="https://tabor.ru"></i><%= t('portfolio.visit') %></a></p>
+
+        </div>
+
+      </article><!--End Project Item -->
+
+      <article class="project-item _portal">
+
+        <img class="img-responsive project-image" src="<%= image_path 'porfolio/item2/thumb1.png' %>" alt=""><!--Project thumb -->
+
+        <div class="hover-mask">
+          <h3 class="project-title"><%= t('portfolio.item2.title') %></h3><!--Project Title -->
+          <p><%= t('portfolio.item2.short_description') %></p><!--Project Subtitle -->
+        </div>
+
+        <!--==== Project Preview HTML ====-->
+
+        <div class="sr-only project-description" data-images="<%= image_path 'porfolio/item2/slide1.png' %>,<%= image_path 'porfolio/item2/slide2.png' %>,<%= image_path 'porfolio/item2/slide3.png' %>" >
+
+          <p><%= t('portfolio.item2.description') %></p>
+
+          <p class="text-center"><a class="btn btn-quattro" target="_blank" href="http://multilisting.su"></i><%= t('portfolio.visit') %></a></p>
+
+        </div>
+
+      </article><!--End Project Item -->
+
+      <article class="project-item _simple">
+
+        <img class="img-responsive project-image" src="<%= image_path 'porfolio/item3/thumb1.png' %>" alt=""><!--Project thumb -->
+
+        <div class="hover-mask">
+          <h3 class="project-title"><%= t('portfolio.item3.title') %></h3><!--Project Title -->
+          <p><%= t('portfolio.item3.short_description') %></p><!--Project Subtitle -->
+        </div>
+
+        <!--==== Project Preview HTML ====-->
+
+        <div class="sr-only project-description" data-images="<%= image_path 'porfolio/item3/slide1.png' %>,<%= image_path 'porfolio/item3/slide2.png' %>,<%= image_path 'porfolio/item3/slide3.png' %>" >
+
+          <p><%= t('portfolio.item3.description') %></p>
+
+          <p class="text-center"><a class="btn btn-quattro" target="_blank" href="http://znakomstva-sajt.ru"></i><%= t('portfolio.visit') %></a></p>
+
+        </div>
+
+      </article><!--End Project Item -->
+
+      <article class="project-item _simple">
+
+        <img class="img-responsive project-image" src="<%= image_path 'porfolio/item4/thumb1.png' %>" alt=""><!--Project thumb -->
+
+        <div class="hover-mask">
+          <h3 class="project-title"><%= t('portfolio.item4.title') %></h3><!--Project Title -->
+          <p><%= t('portfolio.item4.short_description') %></p><!--Project Subtitle -->
+        </div>
+
+        <!--==== Project Preview HTML ====-->
+
+        <div class="sr-only project-description" data-images="<%= image_path 'porfolio/item4/slide1.png' %>,<%= image_path 'porfolio/item4/slide2.png' %>,<%= image_path 'porfolio/item4/slide3.png' %>" >
+
+          <p><%= t('portfolio.item4.description') %></p>
+
+          <p class="text-center"><a class="btn btn-quattro" target="_blank" href="http://intensiveplus.ru"></i><%= t('portfolio.visit') %></a></p>
+
+        </div>
+
+      </article><!--End Project Item -->
+
+    </div><!-- End projects -->
+
+  </div><!-- End container -->
+
+  <p class="text-center"><a class="btn btn-quattro scrollto" href="#pricing"><%= t('portfolio.see') %></a></p>
+
+
+</section>
+
+<!-- ==============================================
+CLIENTS
+=============================================== -->
+<!--<section id="clients" class="color-bg">-->
+
+  <!--<div class="container">-->
+
+    <!--<div class="row clients">-->
+
+      <!--<div class="col-sm-6 col-md-3">-->
+
+        <!--<div class="client">-->
+          <!--<a href="#link"><img class="img-responsive img-center" src="<%= image_path 'client-logo-1.png' %>" alt=""/></a>-->
+        <!--</div>-->
+
+      <!--</div>-->
+
+      <!--<div class="col-sm-6 col-md-3">-->
+
+        <!--<div class="client">-->
+          <!--<a href="#link"><img class="img-responsive img-center" src="<%= image_path 'client-logo-2.png' %>" alt=""/></a>-->
+        <!--</div>-->
+
+      <!--</div>-->
+
+      <!--<div class="col-sm-6 col-md-3">-->
+
+        <!--<div class="client">-->
+          <!--<a href="#link"><img class="img-responsive img-center" src="<%= image_path 'client-logo-3.png' %>" alt=""/></a>-->
+        <!--</div>-->
+
+      <!--</div>-->
+
+      <!--<div class="col-sm-6 col-md-3">-->
+
+        <!--<div class="client">-->
+          <!--<a href="#link"><img class="img-responsive img-center" src="<%= image_path 'client-logo-4.png' %>" alt=""/></a>-->
+        <!--</div>-->
+
+      <!--</div>-->
+
+    <!--</div>&lt;!&ndash; End row &ndash;&gt;-->
+
+  <!--</div>&lt;!&ndash; End container &ndash;&gt;-->
+
+<!--</section>-->
+
+<!-- ==============================================
+TEAM
+=============================================== -->
+<!--<section id="team" class="gray-bg padding-top-bottom">-->
+
+  <!--<div class="container">-->
+
+    <!--<h1 class="section-title">Meet the Team</h1>-->
+    <!--<p class="section-description">We are a small team with great skills. See the faces behind the lines of code. </p>-->
+
+    <!--<div class="row">-->
+
+      <!--<div class="col-md-3 col-sm-6 team-member scrollimation fade-up d1">-->
+
+        <!--<div class="member-thumb">-->
+          <!--<img class="img-responsive img-center" src="<%= image_path 'member-1.jpg' %>" alt="" />-->
+
+          <!--<ul class="member-socials">-->
+            <!--<li><a href="mailto:mail@example.com"><i class="fa fa-envelope fa-fw"></i></a></li>-->
+            <!--<li><a href="#link"><i class="fa fa-twitter fa-fw"></i></a></li>-->
+            <!--<li><a href="#link"><i class="fa fa-facebook fa-fw"></i></a></li>-->
+            <!--<li><a href="#link"><i class="fa fa-linkedin fa-fw"></i></a></li>-->
+          <!--</ul>-->
+
+        <!--</div>-->
+
+        <!--<div class="member-details">-->
+          <!--<h4>John Doe</h4>-->
+          <!--<p class="title">Lead Designer</p>-->
+          <!--<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>-->
+        <!--</div>-->
+
+      <!--</div>-->
+
+      <!--<div class="col-md-3 col-sm-6 team-member scrollimation fade-up">-->
+
+        <!--<div class="member-thumb">-->
+          <!--<img class="img-responsive img-center" src="<%= image_path 'member-2.jpg' %>" alt="" />-->
+
+          <!--<ul class="member-socials">-->
+            <!--<li><a href="mailto:mail@example.com"><i class="fa fa-envelope fa-fw"></i></a></li>-->
+            <!--<li><a href="#link"><i class="fa fa-twitter fa-fw"></i></a></li>-->
+            <!--<li><a href="#link"><i class="fa fa-facebook fa-fw"></i></a></li>-->
+            <!--<li><a href="#link"><i class="fa fa-linkedin fa-fw"></i></a></li>-->
+          <!--</ul>-->
+
+        <!--</div>-->
+
+        <!--<div class="member-details">-->
+          <!--<h4>Richard Roe</h4>-->
+          <!--<p class="title">Lead Developer</p>-->
+          <!--<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>-->
+        <!--</div>-->
+
+      <!--</div>-->
+
+      <!--<div class="col-md-3 col-sm-6 team-member scrollimation fade-up">-->
+
+        <!--<div class="member-thumb">-->
+          <!--<img class="img-responsive img-center" src="<%= image_path 'member-3.jpg' %>" alt="" />-->
+
+          <!--<ul class="member-socials">-->
+            <!--<li><a href="mailto:mail@example.com"><i class="fa fa-envelope fa-fw"></i></a></li>-->
+            <!--<li><a href="#link"><i class="fa fa-twitter fa-fw"></i></a></li>-->
+            <!--<li><a href="#link"><i class="fa fa-facebook fa-fw"></i></a></li>-->
+            <!--<li><a href="#link"><i class="fa fa-linkedin fa-fw"></i></a></li>-->
+          <!--</ul>-->
+
+        <!--</div>-->
+
+        <!--<div class="member-details">-->
+          <!--<h4>Jane Doe</h4>-->
+          <!--<p class="title">Designer</p>-->
+          <!--<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>-->
+        <!--</div>-->
+
+      <!--</div>-->
+
+      <!--<div class="col-md-3 col-sm-6 team-member scrollimation fade-up d1">-->
+
+        <!--<div class="member-thumb">-->
+          <!--<img class="img-responsive img-center" src="<%= image_path 'member-4.jpg' %>" alt="" />-->
+
+          <!--<ul class="member-socials">-->
+            <!--<li><a href="mailto:mail@example.com"><i class="fa fa-envelope fa-fw"></i></a></li>-->
+            <!--<li><a href="#link"><i class="fa fa-twitter fa-fw"></i></a></li>-->
+            <!--<li><a href="#link"><i class="fa fa-facebook fa-fw"></i></a></li>-->
+            <!--<li><a href="#link"><i class="fa fa-linkedin fa-fw"></i></a></li>-->
+          <!--</ul>-->
+
+        <!--</div>-->
+
+        <!--<div class="member-details">-->
+          <!--<h4>Stanley Roe</h4>-->
+          <!--<p class="title">CEO &amp; Founder</p>-->
+          <!--<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>-->
+        <!--</div>-->
+
+      <!--</div>-->
+
+    <!--</div>-->
+
+  <!--</div>-->
+
+<!--</section>-->
+
+<!-- ==============================================
+TESTIMONIALS
+=============================================== -->
+<!--<section id="testimonials" class="parallax-bg light-typo padding-top-bottom" data-parallax-background="<%= image_path 'man-bg.jpg' %>" data-stellar-background-ratio=".5">-->
+
+  <!--<div class="container">-->
+
+    <!--<h1 class="section-title scrollimation fade-up">What people say</h1>-->
+
+    <!--<div class="row scrollimation fade-in">-->
+
+      <!--<div class="col-sm-10 col-sm-offset-1">-->
+
+        <!--<div id="testimonials-slider" class="flexslider">-->
+
+          <!--<ul class="slides">-->
+            <!--&lt;!&ndash;Single Testimonial&ndash;&gt;-->
+            <!--<li>-->
+              <!--<div class="media">-->
+                <!--<div class="pull-left">-->
+                  <!--<img class="client-img img-circle" src="<%= image_path 'client-1.jpg' %>" alt=""/>-->
+                <!--</div>-->
+
+                <!--<div class="media-body">-->
+                  <!--<p class="testimonial">&ldquo;Lorem Ipsum is simply dummy text of the printing and typesetting industry.&bdquo;</p>-->
+                  <!--<p class="client">John Doe / <span>Google Inc.</span></p>-->
+                <!--</div>-->
+              <!--</div>-->
+            <!--</li>&lt;!&ndash;End Single Testimonial&ndash;&gt;-->
+            <!--<li>-->
+              <!--<div class="media">-->
+                <!--<div class="pull-left">-->
+                  <!--<img class="client-img img-circle" src="<%= image_path 'client-2.jpg' %>" alt=""/>-->
+                <!--</div>-->
+
+                <!--<div class="media-body">-->
+                  <!--<p class="testimonial">&ldquo;Nam id felis eu felis consequat adipiscing. Suspendisse sit amet faucibus nunc, dignissim vehicula enim. Vestibulum luctus turpis sit amet varius venenatis.&bdquo;</p>-->
+                  <!--<p class="client">John Doe / <span>Google Inc.</span></p>-->
+                <!--</div>-->
+              <!--</div>-->
+            <!--</li>-->
+            <!--<li>-->
+              <!--<div class="media">-->
+                <!--<div class="pull-left">-->
+                  <!--<img class="client-img img-circle" src="<%= image_path 'client-3.jpg' %>" alt=""/>-->
+                <!--</div>-->
+
+                <!--<div class="media-body">-->
+                  <!--<p class="testimonial">&ldquo;Lorem Ipsum is simply dummy text of the printing and typesetting industry. Suspendisse eu erat venenatis, euismod tellus sollicitudin, egestas lacus&bdquo;</p>-->
+                  <!--<p class="client">John Doe / <span>Google Inc.</span></p>-->
+                <!--</div>-->
+              <!--</div>-->
+            <!--</li>-->
+          <!--</ul>-->
+
+        <!--</div>&lt;!&ndash; End slider &ndash;&gt;-->
+
+      <!--</div>&lt;!&ndash; End col &ndash;&gt;-->
+
+    <!--</div>&lt;!&ndash; End row &ndash;&gt;-->
+
+  <!--</div>&lt;!&ndash; End container &ndash;&gt;-->
+
+<!--</section>-->
+
+<!-- ==============================================
+PRICES
+=============================================== -->
+<section id="pricing" class="gray-bg padding-top-bottom">
+
+  <div class="container">
+
+    <h2 class="section-title"><%= t('pricing.title') %></h2>
+    <p class="section-description"><%= t('pricing.description') %></p>
+
+    <div class="row pricing">
+
+      <div class="col-lg-12">
+
+        <div class="col-sm-3 text-center scrollimation fade-right">
+
+          <div class="item">
+            <h2><%= t('pricing.plan1.title') %></h2>
+            <p class="price"><%= t('pricing.plan1.price') %></p>
+
+            <p><%= t('pricing.plan1.description1') %></p>
+            <p><%= t('pricing.plan1.description2') %></p>
+            <p><%= t('pricing.plan1.description3') %></p>
+
+            <a class="btn btn-quattro scrollto" href="#contact"><%= t('pricing.order_now') %></a>
+
+          </div><!-- End Pricing Item -->
+
+        </div>
+
+        <div class="col-sm-3 text-center scrollimation fade-in">
+
+          <div class="item">
+            <h2><%= t('pricing.plan2.title') %></h2>
+            <p class="price"><%= t('pricing.plan2.price') %></p>
+
+            <p><%= t('pricing.plan2.description1') %></p>
+            <p><%= t('pricing.plan2.description2') %></p>
+            <p><%= t('pricing.plan2.description3') %></p>
+
+            <a class="btn btn-quattro scrollto" href="#contact"><%= t('pricing.order_now') %></a>
+
+          </div><!-- End Pricing Item -->
+
+        </div>
+
+        <div class="col-sm-3 text-center scrollimation fade-left">
+
+          <div class="item">
+            <h2><%= t('pricing.plan3.title') %></h2>
+            <p class="price"><%= t('pricing.plan3.price') %></p>
+
+            <p><%= t('pricing.plan3.description1') %></p>
+            <p><%= t('pricing.plan3.description2') %></p>
+            <p><%= t('pricing.plan3.description3') %></p>
+
+            <a class="btn btn-quattro scrollto" href="#contact"><%= t('pricing.order_now') %></a>
+
+          </div><!-- End Pricing Item -->
+
+        </div>
+
+        <div class="col-sm-3 text-center scrollimation fade-left">
+
+          <div class="item">
+            <h2><%= t('pricing.plan4.title') %></h2>
+            <p class="price"><%= t('pricing.plan4.price') %></p>
+
+            <p><%= t('pricing.plan4.description1') %></p>
+            <p><%= t('pricing.plan4.description2') %></p>
+            <p><%= t('pricing.plan4.description3') %></p>
+
+            <a class="btn btn-quattro scrollto" href="#contact"><%= t('pricing.order_now') %></a>
+
+          </div><!-- End Pricing Item -->
+
+        </div>
+
+      </div>
+
+    </div><!-- End row -->
+
+  </div><!-- End container -->
+
+</section>
+
+<!-- ==============================================
+CONTACT
+=============================================== -->
+<section id="contact" class="light-typo padding-top-bottom">
+  <div class="container">
+
+    <h2 class="section-title"><%= t('contact.title') %></h2>
+    <p class="section-description"><%= t('contact.description') %></p>
+
+    <div class="row margin-bottom">
+
+      <div class="col-sm-5 col-sm-offset-1 text-center contact-item scrollimation fade-up">
+
+        <div class="icon"><i class="fa fa-phone fa-fw"></i></div>
+        <p><%= t('contact.header.phone') %></p>
+        <p><%= t('company.phone') %></p>
+
+      </div>
+
+      <div class="col-sm-4 text-center contact-item scrollimation fade-up d1">
+
+        <a class="icon" href="mailto:<%= t('company.email') %>"><i class="fa fa-envelope fa-fw"></i></a>
+        <p><%= t('contact.header.email') %></p>
+        <p><%= t('company.email') %></p>
+
+      </div>
+
+      <!--<div class="col-sm-3 text-center contact-item scrollimation fade-up d2">-->
+
+        <!--<a class="icon" href="http://goo.gl/maps/0m7WQ" target="_blank"><i class="fa fa-map-marker fa-fw"></i></a>-->
+        <!--<h2>Location</h2>-->
+        <!--<p>250 W Broadway <br/>NY , 10013</p>-->
+
+      <!--</div>-->
+
+    </div>
+
+    <div class="row">
+
+      <!--=== Contact Form ===-->
+
+
+      <form id="contact-form" class="col-sm-8 col-sm-offset-2" action="<%= proposals_path %>" method="post" novalidate>
+
+        <div class="form-group">
+          <label class="control-label" for="contact_name"><%= t('contact_form.name.placeholder') %></label>
+          <div class="controls">
+            <input id="contact_name" name="proposal[name]" placeholder="<%= t('contact_form.name.placeholder') %>" class="form-control requiredField" type="text" data-error-empty="<%= t('contact_form.name.error.empty') %>">
+          </div>
+        </div><!-- End name input -->
+
+        <div class="form-group">
+          <label class="control-label" for="contact_mail"><%= t('contact_form.email.placeholder') %></label>
+          <div class=" controls">
+            <input id="contact_mail" name="proposal[email]" placeholder="<%= t('contact_form.email.placeholder') %>" class="form-control requiredField" type="email" data-error-empty="<%= t('contact_form.email.error.empty') %>" data-error-invalid="<%= t('contact_form.email.error.invalid') %>">
+          </div>
+        </div><!-- End email input -->
+
+        <div class="form-group">
+          <label class="control-label" for="contact_phone"><%= t('contact_form.phone.placeholder') %></label>
+          <div class=" controls">
+            <input id="contact_phone" name="proposal[phone]" placeholder="<%= t('contact_form.phone.placeholder') %>" class="form-control requiredField" type="phone" data-error-empty="<%= t('contact_form.phone.error.empty') %>" data-error-invalid="<%= t('contact_form.phone.error.invalid') %>">
+          </div>
+        </div><!-- End phone input -->
+
+        <div class="form-group">
+          <label class="control-label" for="contact_message"><%= t('contact_form.message.placeholder') %></label>
+          <div class="controls">
+            <textarea id="contact_message" name="proposal[message]" placeholder="<%= t('contact_form.message.placeholder') %>" class="form-control requiredField" rows="8" data-error-empty="<%= t('contact_form.message.error.empty') %>"></textarea>
+          </div>
+        </div><!-- End textarea -->
+
+        <p class="text-center"><button name="submit" type="submit" class="btn btn-quattro" data-default-message="<%= t('contact_form.submit_button.text') %>" data-error-message="<%= t('contact_form.error') %>" data-error-sending="<%= t('contact_form.fail') %>" data-sending-message="<%= t('contact_form.sending') %>" data-ok-message="<%= t('contact_form.sent') %>"><i class="fa fa-paper-plane"></i><%= t('contact_form.submit_button.text') %></button></p>
+        <input type="hidden" name="submitted" id="submitted" value="true" />
+
+      </form><!-- End contact-form -->
+    </div>
+
+  </div>
+
+</section>
+
+<!-- ==============================================
+FOOTER
+=============================================== -->
+<footer id="main-footer">
+  <div class="container text-center">
+    <p>&copy;<%= DateTime.now.year %> <%= t('company.name') %></p>
+  </div>
+</footer>
+
+
+<!-- ==============================================
+SCRIPTS
+=============================================== -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<%= javascript_include_tag 'bootstrap.min' %>
+<%= javascript_include_tag 'jquery.easing.1.3.min' %>
+<%= javascript_include_tag 'jquery.scrollto' %>
+<%= javascript_include_tag 'jquery.flexslider.min' %>
+<%= javascript_include_tag 'jquery.stellar' %>
+<%= javascript_include_tag 'jquery.masonry.min' %>
+<%= javascript_include_tag 'waypoints.min' %>
+<%= javascript_include_tag 'waypoints-sticky.min' %>
+<%#= javascript_include_tag 'jquery.countTo' %>
+<%= javascript_include_tag 'jquery.fitvids' %>
+<%= javascript_include_tag 'contact' %>
+<%= javascript_include_tag 'quattro' %>
+
+</body>
