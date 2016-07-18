@@ -24,6 +24,7 @@ ru:
     name: 'GeekDev'
     phone: "+79508447533"
     email: "teacplusplus@gmail.com"
+    skype: "teacplusplus"
   contact_form:
     submit_button:
       text: "Отправить нам сообщение"
@@ -55,6 +56,7 @@ ru:
     header:
       phone: "Телефон"
       email: "Email"
+      skype: "Skype"
   navigation:
     home: "Главная"
     about: "О нас"
