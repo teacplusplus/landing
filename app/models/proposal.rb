@@ -3,6 +3,6 @@ class Proposal < ActiveRecord::Base
   after_create :send_email
   private
   def send_email
-
+    BaseMailer.inform(self).deliver
   end
 end
