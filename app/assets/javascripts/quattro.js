@@ -6,6 +6,7 @@ $(document).ready(function() {
 	
 	$(window).load(function(){
 		$('#page-loader').fadeOut(500);
+        $('head').append('<script crossorigin="anonymous" async type="text/javascript" src="//api.pozvonim.com/widget/callback/v3/8caf18e93e08a6524f8abff2ebb7d21b/connect" id="check-code-pozvonim" charset="UTF-8"></script>');
 	});	
 	
 	/*============================================
