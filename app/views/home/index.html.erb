@@ -60,7 +60,7 @@ ABOUT
 
       <div class="col-sm-4">
 
-        <h3><%= t('about.block1.h3') %></h3>
+        <h2><%= t('about.block1.h2') %></h2>
         <p>
           <%= t('about.block1.p') %>
           <br/><a class="scrollto" href="#features"><%= t('about.lean_more') %></a>
@@ -69,7 +69,7 @@ ABOUT
 
       <div class="col-sm-4">
 
-        <h3><%= t('about.block2.h3') %></h3>
+        <h2><%= t('about.block2.h2') %></h2>
         <p>
           <%= t('about.block2.p') %>
           <br/><a class="scrollto" href="#features"><%= t('about.lean_more') %></a>
@@ -78,7 +78,7 @@ ABOUT
 
       <div class="col-sm-4">
 
-        <h3><%= t('about.block3.h3') %></h3>
+        <h2><%= t('about.block3.h2') %></h2>
         <p>
           <%= t('about.block3.p') %>
           <br/><a class="scrollto" href="#features"><%= t('about.lean_more') %></a>
@@ -101,7 +101,7 @@ FEATURES
 
   <div class="container features">
 
-    <h2 class="section-title"><%= t('features.title') %></h2>
+    <div class="section-title"><%= t('features.title') %></div>
     <p class="section-description"><%= t('features.description') %></p>
 
     <div class="row">
@@ -209,7 +209,7 @@ CALL TO ACTION
 
       <div class="col-sm-6 scrollimation fade-left d1">
 
-        <h2 class="big-title"><%= t('choose_us.title') %></h2>
+        <div class="big-title"><%= t('choose_us.title') %></div>
         <p><%= t('choose_us.p1') %></p>
         <p><%= t('choose_us.p2') %></p>
 
@@ -231,7 +231,7 @@ PORTFOLIO
 
   <div class="container">
 
-    <h2 class="section-title"><%= t('portfolio.title') %></h2>
+    <div class="section-title"><%= t('portfolio.title') %></div>
 
     <!--==== Portfolio Filters ====-->
     <div id="filter-works">
@@ -256,7 +256,7 @@ PORTFOLIO
 
       <span class="close-preview">&times;</span>
 
-      <h3 id="project-title"></h3>
+      <b id="project-title"></b>
 
       <div id="project-slider" class="flexslider"></div>
 
@@ -283,11 +283,7 @@ PORTFOLIO
 
           <!--==== Project Preview HTML ====-->
 
-          <div class="sr-only project-description" data-images="<%= image_path 'porfolio/item1/slide1.png' %>,<%= image_path 'porfolio/item1/slide2.png' %>,<%= image_path 'porfolio/item1/slide3.png' %>" >
-
-            <p><%= t('portfolio.item1.description') %></p>
-
-            <p class="text-center"><a class="btn btn-quattro" target="_blank" href="https://tabor.ru" rel="nofollow"></i><%= t('portfolio.visit') %></a></p>
+          <div class="sr-only project-description" data-project-description="<p><%= t('portfolio.item1.description') %></p><p class='text-center'><a class='btn btn-quattro' target='_blank' href='https://tabor.ru' rel='nofollow'></i><%= t('portfolio.visit') %></a></p>" data-images="<%= image_path 'porfolio/item1/slide1.png' %>,<%= image_path 'porfolio/item1/slide2.png' %>,<%= image_path 'porfolio/item1/slide3.png' %>" >
 
           </div>
 
@@ -304,12 +300,7 @@ PORTFOLIO
 
           <!--==== Project Preview HTML ====-->
 
-          <div class="sr-only project-description" data-images="<%= image_path 'porfolio/item2/slide1.png' %>,<%= image_path 'porfolio/item2/slide2.png' %>,<%= image_path 'porfolio/item2/slide3.png' %>" >
-
-            <p><%= t('portfolio.item2.description') %></p>
-
-            <p class="text-center"><a class="btn btn-quattro" target="_blank" href="http://multilisting.su" rel="nofollow"></i><%= t('portfolio.visit') %></a></p>
-
+          <div class="sr-only project-description" data-project-description="<p><%= t('portfolio.item2.description') %></p><p class='text-center'><a class='btn btn-quattro' target='_blank' href='http://multilisting.su' rel='nofollow'></i><%= t('portfolio.visit') %></a></p>" data-images="<%= image_path 'porfolio/item2/slide1.png' %>,<%= image_path 'porfolio/item2/slide2.png' %>,<%= image_path 'porfolio/item2/slide3.png' %>" >
           </div>
 
         </article><!--End Project Item -->
@@ -325,12 +316,7 @@ PORTFOLIO
 
           <!--==== Project Preview HTML ====-->
 
-          <div class="sr-only project-description" data-images="<%= image_path 'porfolio/item3/slide1.png' %>,<%= image_path 'porfolio/item3/slide2.png' %>,<%= image_path 'porfolio/item3/slide3.png' %>" >
-
-            <p><%= t('portfolio.item3.description') %></p>
-
-            <p class="text-center"><a class="btn btn-quattro" target="_blank" href="http://znakomstva-sajt.ru" rel="nofollow"></i><%= t('portfolio.visit') %></a></p>
-
+          <div class="sr-only project-description" data-project-description="<p><%= t('portfolio.item3.description') %></p><p class='text-center'><a class='btn btn-quattro' target='_blank' href='http://znakomstva-sajt.ru' rel='nofollow'></i><%= t('portfolio.visit') %></a></p>" data-images="<%= image_path 'porfolio/item3/slide1.png' %>,<%= image_path 'porfolio/item3/slide2.png' %>,<%= image_path 'porfolio/item3/slide3.png' %>" >
           </div>
 
         </article><!--End Project Item -->
@@ -346,12 +332,7 @@ PORTFOLIO
 
           <!--==== Project Preview HTML ====-->
 
-          <div class="sr-only project-description" data-images="<%= image_path 'porfolio/item4/slide1.png' %>,<%= image_path 'porfolio/item4/slide2.png' %>,<%= image_path 'porfolio/item4/slide3.png' %>" >
-
-            <p><%= t('portfolio.item4.description') %></p>
-
-            <p class="text-center"><a class="btn btn-quattro" target="_blank" href="http://intensiveplus.ru" rel="nofollow"></i><%= t('portfolio.visit') %></a></p>
-
+          <div class="sr-only project-description" data-project-description="<p><%= t('portfolio.item4.description') %></p><p class='text-center'><a class='btn btn-quattro' target='_blank' href='http://intensiveplus.ru' rel='nofollow'></i><%= t('portfolio.visit') %></a></p>" data-images="<%= image_path 'porfolio/item4/slide1.png' %>,<%= image_path 'porfolio/item4/slide2.png' %>,<%= image_path 'porfolio/item4/slide3.png' %>" >
           </div>
 
         </article><!--End Project Item -->
@@ -481,7 +462,7 @@ PRICES
 
   <div class="container">
 
-    <h2 class="section-title"><%= t('pricing.title') %></h2>
+    <div class="section-title"><%= t('pricing.title') %></div>
     <p class="section-description"><%= t('pricing.description') %></p>
 
     <div class="row pricing">
@@ -491,14 +472,14 @@ PRICES
         <div class="col-sm-3 text-center scrollimation fade-right">
 
           <div class="item">
-            <h2><%= t('pricing.plan1.title') %></h2>
+            <b><%= t('pricing.plan1.title') %></b>
             <p class="price"><%= t('pricing.plan1.price') %></p>
 
             <p><%= t('pricing.plan1.description1') %></p>
             <p><%= t('pricing.plan1.description2') %></p>
             <p><%= t('pricing.plan1.description3') %></p>
 
-            <a class="btn btn-quattro scrollto" href="#contact"><%= t('pricing.order_now') %></a>
+            <a class="btn btn-quattro scrollto" href="#contact"><%= t('pricing.plan1.order_now') %></a>
 
           </div><!-- End Pricing Item -->
 
@@ -507,14 +488,14 @@ PRICES
         <div class="col-sm-3 text-center scrollimation fade-in">
 
           <div class="item">
-            <h2><%= t('pricing.plan2.title') %></h2>
+            <b><%= t('pricing.plan2.title') %></b>
             <p class="price"><%= t('pricing.plan2.price') %></p>
 
             <p><%= t('pricing.plan2.description1') %></p>
             <p><%= t('pricing.plan2.description2') %></p>
             <p><%= t('pricing.plan2.description3') %></p>
 
-            <a class="btn btn-quattro scrollto" href="#contact"><%= t('pricing.order_now') %></a>
+            <a class="btn btn-quattro scrollto" href="#contact"><%= t('pricing.plan2.order_now') %></a>
 
           </div><!-- End Pricing Item -->
 
@@ -523,14 +504,14 @@ PRICES
         <div class="col-sm-3 text-center scrollimation fade-left">
 
           <div class="item">
-            <h2><%= t('pricing.plan3.title') %></h2>
+            <b><%= t('pricing.plan3.title') %></b>
             <p class="price"><%= t('pricing.plan3.price') %></p>
 
             <p><%= t('pricing.plan3.description1') %></p>
             <p><%= t('pricing.plan3.description2') %></p>
             <p><%= t('pricing.plan3.description3') %></p>
 
-            <a class="btn btn-quattro scrollto" href="#contact"><%= t('pricing.order_now') %></a>
+            <a class="btn btn-quattro scrollto" href="#contact"><%= t('pricing.plan3.order_now') %></a>
 
           </div><!-- End Pricing Item -->
 
@@ -539,14 +520,14 @@ PRICES
         <div class="col-sm-3 text-center scrollimation fade-left">
 
           <div class="item">
-            <h2><%= t('pricing.plan4.title') %></h2>
+            <b><%= t('pricing.plan4.title') %></b>
             <p class="price"><%= t('pricing.plan4.price') %></p>
 
             <p><%= t('pricing.plan4.description1') %></p>
             <p><%= t('pricing.plan4.description2') %></p>
             <p><%= t('pricing.plan4.description3') %></p>
 
-            <a class="btn btn-quattro scrollto" href="#contact"><%= t('pricing.order_now') %></a>
+            <a class="btn btn-quattro scrollto" href="#contact"><%= t('pricing.plan4.order_now') %></a>
 
           </div><!-- End Pricing Item -->
 

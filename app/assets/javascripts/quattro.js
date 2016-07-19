@@ -161,7 +161,7 @@ $(document).ready(function() {
 	function buildProject(elem){
 	
 		var	title = elem.find('.project-title').text(),
-			descr = elem.find('.project-description').html(),
+			descr = elem.find('.project-description').data('project-description'),
 			slidesHtml = '<ul class="slides">',
 			elemDataCont = elem.find('.project-description');
 
