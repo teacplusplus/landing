@@ -45,7 +45,7 @@ MAIN NAV
 <!-- ==============================================
 ABOUT
 =============================================== -->
-<section id="about" class="gray-bg padding-top-bottom">
+<div id="about" class="gray-bg padding-top-bottom">
 
   <div class="container">
 
@@ -90,12 +90,12 @@ ABOUT
   </div><!--End container -->
 
 
-</section><!--End Call to Action -->
+</div><!--End Call to Action -->
 
 <!-- ==============================================
 FEATURES
 =============================================== -->
-<section id="features" class="white-bg padding-top-bottom">
+<div id="features" class="white-bg padding-top-bottom">
 
   <div class="container features">
 
@@ -188,12 +188,12 @@ FEATURES
 
   </div>
 
-</section>
+</div>
 
 <!-- ==============================================
 CALL TO ACTION
 =============================================== -->
-<section id="choose-us" class="parallax-bg padding-top-bottom cta-image" data-parallax-background="<%= image_path 'light-abstract.jpg' %>" data-stellar-background-ratio=".7">
+<div id="choose-us" class="parallax-bg padding-top-bottom cta-image" data-parallax-background="<%= image_path 'light-abstract.jpg' %>" data-stellar-background-ratio=".7">
 
   <div class="container">
 
@@ -219,13 +219,13 @@ CALL TO ACTION
 
   </div>
 
-</section>
+</div>
 
 
 <!-- ==============================================
 PORTFOLIO
 =============================================== -->
-<section id="portfolio" class="padding-top-bottom">
+<div id="portfolio" class="padding-top-bottom">
 
   <div class="container">
 
@@ -264,9 +264,9 @@ PORTFOLIO
 
   </div>
 
-  <noindex>
+  <div class="masonry-wrapper">
 
-    <div class="masonry-wrapper">
+    <noindex>
 
       <div id="projects-container">
 
@@ -336,21 +336,18 @@ PORTFOLIO
         </article><!--End Project Item -->
 
       </div><!-- End projects -->
-
-    </div><!-- End container -->
-
-  </noindex>
-
+    </noindex>
+  </div><!-- End container -->
   <p class="text-center"><a class="btn btn-quattro scrollto" href="#pricing"><%= t('portfolio.see') %></a></p>
 
 
-</section>
+</div>
 
 
 <!-- ==============================================
 TEAM
 =============================================== -->
-<!--<section id="team" class="gray-bg padding-top-bottom">-->
+<!--<div id="team" class="gray-bg padding-top-bottom">-->
 
   <!--<div class="container">-->
 
@@ -451,12 +448,12 @@ TEAM
 
   <!--</div>-->
 
-<!--</section>-->
+<!--</div>-->
 
 <!-- ==============================================
 PRICES
 =============================================== -->
-<section id="pricing" class="gray-bg padding-top-bottom">
+<div id="pricing" class="gray-bg padding-top-bottom">
 
   <div class="container">
 
@@ -537,12 +534,12 @@ PRICES
 
   </div><!-- End container -->
 
-</section>
+</div>
 
 <!-- ==============================================
 CONTACT
 =============================================== -->
-<section id="contact" class="light-typo padding-top-bottom">
+<div id="contact" class="light-typo padding-top-bottom">
   <div class="container">
 
     <h2 class="section-title"><%= t('contact.title') %></h2>
@@ -620,7 +617,7 @@ CONTACT
 
   </div>
 
-</section>
+</div>
 
 <!-- ==============================================
 FOOTER
