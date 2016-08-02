@@ -23,7 +23,7 @@ ru:
   company:
     name: 'GeekDev'
     phone: "+79508447533"
-    email: "teacplusplus@gmail.com"
+    email: "geekdev@mail.ru"
     skype: "teacplusplus"
   contact_form:
     submit_button:
@@ -57,6 +57,8 @@ ru:
       phone: "Телефон"
       email: "E-mail"
       skype: "Skype"
+    briefing: "Так же Вы можете заполнить короткий бриф по созданию сайта и отправить его нам на почту geekdev@mail.ru."
+    download_briefing: "Скачать бриф."
   navigation:
     home: "Главная"
     about: "О нас"

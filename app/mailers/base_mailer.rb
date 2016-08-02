@@ -3,7 +3,7 @@ class BaseMailer < ActionMailer::Base
 
   def inform(proposal)
     @proposal = proposal
-    mail(to: 'teacplusplus@gmail.com', subject: 'Новое обращение')
+    mail(to: 'geekdev@mail.ru', subject: 'Новое обращение')
   end
 
 end
