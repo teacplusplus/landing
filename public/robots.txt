@@ -1,2 +1,4 @@
 User-agent: *
 Allow: *
+Host: geekdev.ru
+Sitemap: http://geekdev.ru/sitemap.xml

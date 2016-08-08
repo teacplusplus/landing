@@ -1,0 +1,115 @@
+<div id="portfolio" class="padding-top-bottom">
+
+  <div class="container">
+
+    <div class="section-title"><%= t('portfolio.title') %></div>
+
+    <!--==== Portfolio Filters ====-->
+    <div id="filter-works">
+      <ul>
+        <li class="active scrollimation fade-right d1">
+          <a href="#" data-filter="*"><%= t('portfolio.filter.all') %></a>
+        </li>
+        <li class="scrollimation fade-right">
+          <a href="#" data-filter="._complex"><%= t('portfolio.filter.complex') %></a>
+        </li>
+        <li class="scrollimation fade-left">
+          <a href="#" data-filter="._portal"><%= t('portfolio.filter.portal') %></a>
+        </li>
+        <li class="scrollimation fade-left d1">
+          <a href="#" data-filter="._simple"><%= t('portfolio.filter.simple') %></a>
+        </li>
+      </ul>
+    </div><!--End portfolio filters -->
+
+    <!--==== Project Preview ====-->
+    <div id="project-preview">
+
+      <span class="close-preview">&times;</span>
+
+      <p id="project-title"></p>
+
+      <div id="project-slider" class="flexslider"></div>
+
+      <div id="project-content"></div>
+
+    </div><!--Project Preview -->
+
+  </div>
+
+  <div class="masonry-wrapper">
+
+    <!--noindex-->
+
+    <div id="projects-container">
+
+      <article class="project-item _complex">
+
+        <img class="img-responsive project-image" src="<%= image_path 'porfolio/item1/thumb1.png' %>" alt="<%= t('portfolio.item1.alt') %>"><!--Project thumb -->
+
+        <div class="hover-mask">
+          <p class="project-title"><%= t('portfolio.item1.title') %></p><!--Project Title -->
+          <p><%= t('portfolio.item1.short_description') %></p><!--Project Subtitle -->
+        </div>
+
+        <!--==== Project Preview HTML ====-->
+
+        <div class="sr-only project-description" data-project-description="<p><%= t('portfolio.item1.description') %></p><p class='text-center'><a class='btn btn-quattro' target='_blank' href='https://tabor.ru' rel='nofollow'></i><%= t('portfolio.visit') %></a></p>" data-images="<%= image_path 'porfolio/item1/slide1.png' %>,<%= image_path 'porfolio/item1/slide2.png' %>,<%= image_path 'porfolio/item1/slide3.png' %>" >
+
+        </div>
+
+      </article><!--End Project Item -->
+
+      <article class="project-item _portal">
+
+        <img class="img-responsive project-image" src="<%= image_path 'porfolio/item2/thumb1.png' %>" alt="<%= t('portfolio.item2.alt') %>"><!--Project thumb -->
+
+        <div class="hover-mask">
+          <p class="project-title"><%= t('portfolio.item2.title') %></p><!--Project Title -->
+          <p><%= t('portfolio.item2.short_description') %></p><!--Project Subtitle -->
+        </div>
+
+        <!--==== Project Preview HTML ====-->
+
+        <div class="sr-only project-description" data-project-description="<p><%= t('portfolio.item2.description') %></p><p class='text-center'><a class='btn btn-quattro' target='_blank' href='http://multilisting.su' rel='nofollow'></i><%= t('portfolio.visit') %></a></p>" data-images="<%= image_path 'porfolio/item2/slide1.png' %>,<%= image_path 'porfolio/item2/slide2.png' %>,<%= image_path 'porfolio/item2/slide3.png' %>" >
+        </div>
+
+      </article><!--End Project Item -->
+
+      <article class="project-item _simple">
+
+        <img class="img-responsive project-image" src="<%= image_path 'porfolio/item3/thumb1.png' %>" alt="<%= t('portfolio.item3.alt') %>"><!--Project thumb -->
+
+        <div class="hover-mask">
+          <p class="project-title"><%= t('portfolio.item3.title') %></p><!--Project Title -->
+          <p><%= t('portfolio.item3.short_description') %></p><!--Project Subtitle -->
+        </div>
+
+        <!--==== Project Preview HTML ====-->
+
+        <div class="sr-only project-description" data-project-description="<p><%= t('portfolio.item3.description') %></p><p class='text-center'><a class='btn btn-quattro' target='_blank' href='http://znakomstva-sajt.ru' rel='nofollow'></i><%= t('portfolio.visit') %></a></p>" data-images="<%= image_path 'porfolio/item3/slide1.png' %>,<%= image_path 'porfolio/item3/slide2.png' %>,<%= image_path 'porfolio/item3/slide3.png' %>" >
+        </div>
+
+      </article><!--End Project Item -->
+
+      <article class="project-item _simple">
+
+        <img class="img-responsive project-image" src="<%= image_path 'porfolio/item4/thumb1.png' %>" alt="<%= t('portfolio.item4.alt') %>"><!--Project thumb -->
+
+        <div class="hover-mask">
+          <p class="project-title"><%= t('portfolio.item4.title') %></p><!--Project Title -->
+          <p><%= t('portfolio.item4.short_description') %></p><!--Project Subtitle -->
+        </div>
+
+        <!--==== Project Preview HTML ====-->
+
+        <div class="sr-only project-description" data-project-description="<p><%= t('portfolio.item4.description') %></p><p class='text-center'><a class='btn btn-quattro' target='_blank' href='http://intensiveplus.ru' rel='nofollow'></i><%= t('portfolio.visit') %></a></p>" data-images="<%= image_path 'porfolio/item4/slide1.png' %>,<%= image_path 'porfolio/item4/slide2.png' %>,<%= image_path 'porfolio/item4/slide3.png' %>" >
+        </div>
+
+      </article><!--End Project Item -->
+
+    </div><!-- End projects -->
+    <!--/noindex-->
+  </div><!-- End container -->
+  <p class="text-center"><a class="btn btn-quattro scrollto" href="#pricing"><%= t('portfolio.see') %></a></p>
+</div>

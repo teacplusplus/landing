@@ -1,0 +1,81 @@
+<div id="contact" class="light-typo padding-top-bottom">
+  <div class="container">
+
+    <h2 class="section-title"><%= t('contact.title') %></h2>
+    <p class="section-description"><%= t('contact.description') %></p>
+
+    <div class="row margin-bottom">
+
+      <div class="col-sm-3 col-sm-offset-1 text-center contact-item scrollimation fade-up">
+
+        <div class="icon"><i class="fa fa-phone fa-fw"></i></div>
+        <p><%= t('contact.header.phone') %></p>
+        <p><%= t('company.phone') %></p>
+
+      </div>
+
+      <div class="col-sm-4 text-center contact-item scrollimation fade-up d1">
+
+        <a class="icon" href="mailto:<%= t('company.email') %>"><i class="fa fa-envelope fa-fw"></i></a>
+        <p><%= t('contact.header.email') %></p>
+        <p><%= t('company.email') %></p>
+
+      </div>
+
+
+      <div class="col-sm-3 text-center contact-item scrollimation fade-up d1">
+
+        <div class="icon"><i class="fa fa-skype fa-fw"></i></div>
+        <p><%= t('contact.header.skype') %></p>
+        <p><%= t('company.skype') %></p>
+
+      </div>
+
+    </div>
+
+    <div class="row">
+
+      <!--=== Contact Form ===-->
+
+
+      <form id="contact-form" class="col-sm-8 col-sm-offset-2" action="<%= proposals_path %>" method="post" novalidate>
+
+        <div class="form-group">
+          <label class="control-label" for="contact_name"><%= t('contact_form.name.placeholder') %></label>
+          <div class="controls">
+            <input id="contact_name" name="proposal[name]" placeholder="<%= t('contact_form.name.placeholder') %>" class="form-control requiredField" type="text" data-error-empty="<%= t('contact_form.name.error.empty') %>">
+          </div>
+        </div><!-- End name input -->
+
+        <div class="form-group">
+          <label class="control-label" for="contact_mail"><%= t('contact_form.email.placeholder') %></label>
+          <div class=" controls">
+            <input id="contact_mail" name="proposal[email]" placeholder="<%= t('contact_form.email.placeholder') %>" class="form-control requiredField" type="email" data-error-empty="<%= t('contact_form.email.error.empty') %>" data-error-invalid="<%= t('contact_form.email.error.invalid') %>">
+          </div>
+        </div><!-- End email input -->
+
+        <div class="form-group">
+          <label class="control-label" for="contact_phone"><%= t('contact_form.phone.placeholder') %></label>
+          <div class=" controls">
+            <input id="contact_phone" name="proposal[phone]" placeholder="<%= t('contact_form.phone.placeholder') %>" class="form-control requiredField" type="phone" data-error-empty="<%= t('contact_form.phone.error.empty') %>" data-error-invalid="<%= t('contact_form.phone.error.invalid') %>">
+          </div>
+        </div><!-- End phone input -->
+
+        <div class="form-group">
+          <label class="control-label" for="contact_message"><%= t('contact_form.message.placeholder') %></label>
+          <div class="controls">
+            <textarea id="contact_message" name="proposal[message]" placeholder="<%= t('contact_form.message.placeholder') %>" class="form-control requiredField" rows="8" data-error-empty="<%= t('contact_form.message.error.empty') %>"></textarea>
+          </div>
+        </div><!-- End textarea -->
+
+        <p class="text-center"><button name="submit" type="submit" class="btn btn-quattro" data-default-message="<%= t('contact_form.submit_button.text') %>" data-error-message="<%= t('contact_form.error') %>" data-error-sending="<%= t('contact_form.fail') %>" data-sending-message="<%= t('contact_form.sending') %>" data-ok-message="<%= t('contact_form.sent') %>"><i class="fa fa-paper-plane"></i><%= t('contact_form.submit_button.text') %></button></p>
+        <input type="hidden" name="submitted" id="submitted" value="true" />
+
+      </form><!-- End contact-form -->
+    </div>
+
+    <p class="section-description"><%= t('contact.briefing') %> <a href="/бриф_на_разработку_сайта_geekdev.ru.docx"><%= t('contact.download_briefing')  %></a></p>
+
+  </div>
+
+</div>
