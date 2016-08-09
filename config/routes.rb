@@ -9,6 +9,9 @@ Rails.application.routes.draw do
 
   resources :proposals
 
+  # get '/sozdat_sajt' => 'home#create_site'
+
+
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 

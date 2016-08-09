@@ -1,0 +1,25 @@
+#main-nav.navbar
+  .container
+    .navbar-header
+      button.navbar-toggle data-target="#site-nav" data-toggle="collapse" type="button"
+        span.icon-bar
+        span.icon-bar
+        span.icon-bar
+      a.navbar-brand href="#{root_path}"
+        img.site-logo alt="Создание и разработка сайтов" src=image_path('logo-small1.png')
+    #site-nav.navbar-collapse.collapse
+      ul.nav.navbar-nav.navbar-right
+        li
+          a.scrollto href="#{root_path}#about"
+            = t('navigation.about')
+        - if home_page?
+          li
+            a.scrollto href="#{root_path}#portfolio"
+              = t('navigation.porfolio')
+        - if home_page?
+          li
+            a.scrollto href="#{root_path}#pricing"
+              = t('navigation.pricing')
+        li
+          a.scrollto href="#{root_path}#contact"
+            = t('navigation.contact')

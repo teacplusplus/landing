@@ -2,30 +2,22 @@
 <html lang="ru-RU" class="no-js">
 <head>
   <%= csrf_meta_tags %>
-  <!-- ==============================================
-  Title and Meta Tags
-  =============================================== -->
+
   <meta charset="utf-8">
-  <title><%= t('meta.title') %></title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="keywords" content="<%= t('meta.keywords') %>">
-  <meta name="description" content="<%= t('meta.description') %>">
 
-  <meta content="<%= t('meta.title') %>" property="og:title">
-  <meta content="<%= t('meta.description') %>" property="og:description">
+  <title><%= t("meta.#{action_name}.title") %></title>
+  <meta name="keywords" content="<%= t("meta.#{action_name}.keywords") %>">
+  <meta name="description" content="<%= t("meta.#{action_name}.description") %>">
+
+  <meta content="<%= t("meta.#{action_name}.title") %>" property="og:title">
+  <meta content="<%= t("meta.#{action_name}.description") %>" property="og:description">
+
   <meta content="<%= image_path 'logo1-mini.png' %>" property="og:image">
-  <!-- ==============================================
-  Favicons
-  =============================================== -->
-  <link rel="shortcut icon" href="<%= image_path 'favicon.ico'%>">
-  <!--<link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png">-->
-  <!--<link rel="apple-touch-icon" sizes="72x72" href="assets/images/apple-touch-icon-72x72.png">-->
-  <!--<link rel="apple-touch-icon" sizes="114x114" href="assets/images/apple-touch-icon-114x114.png">-->
 
-  <!-- ==============================================
-  CSS
-  =============================================== -->
+  <link rel="shortcut icon" href="<%= image_path 'favicon.ico'%>">
+
   <%= stylesheet_link_tag 'bootstrap.min' %>
   <%= stylesheet_link_tag 'font-awesome' %>
   <%= stylesheet_link_tag 'flexslider' %>
@@ -50,7 +42,9 @@
 
 </head>
 <body data-spy="scroll" data-target="#main-nav" data-offset="400">
+  <%= render 'share/loader' %>
   <%= yield %>
-  <script type="text/javascript"> (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter38540675 = new Ya.Metrika({ id:38540675, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks"); </script> <noscript><div><img src="https://mc.yandex.ru/watch/38540675" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+  <%= render 'share/footer' %>
+  <%= render 'share/scripts' %>
 </body>
 </html>

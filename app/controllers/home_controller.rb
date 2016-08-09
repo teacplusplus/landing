@@ -1,5 +1,5 @@
 class HomeController < ApplicationController
   def index;end
 
-  def page1;end
+  def create_site;end
 end

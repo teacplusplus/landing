@@ -1,0 +1,33 @@
+#about.gray-bg class="#{home_page? ? 'padding-top-bottom' : 'padding-top'}"
+  .container
+    h1.section-title
+      = t("meta.#{action_name}.h1")
+    p.section-description
+      = t("meta.#{action_name}.p")
+    - if home_page?
+      img.img-responsive.img-center.scrollimation.fade-up alt="Cайт под ключ" src=image_path('logo1.png')
+      .row
+        .col-sm-4
+          h2
+            = t('about.block1.h2')
+          p
+            = t('about.block1.p')
+            br
+            a.scrollto href="#features"
+              = t('about.lean_more')
+        .col-sm-4
+          h2
+            = t('about.block2.h2')
+          p
+            = t('about.block2.p')
+            br
+            a.scrollto href="#features"
+              = t('about.lean_more')
+        .col-sm-4
+          h2
+            = t('about.block3.h2')
+          p
+            = t('about.block3.p')
+            br
+            a.scrollto href="#features"
+              = t('about.lean_more')
