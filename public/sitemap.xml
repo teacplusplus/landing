@@ -4,12 +4,45 @@
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-  <!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
-
   <url>
     <loc>http://geekdev.ru/</loc>
     <changefreq>weekly</changefreq>
   </url>
+  <url>
+    <loc>http://geekdev.ru/sozdanye_sajtov</loc>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>http://geekdev.ru/sajt_pod_kljuch</loc>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>http://geekdev.ru/sozdat_sajt</loc>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>http://geekdev.ru/sozdanye_sajta_s_nulja</loc>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>http://geekdev.ru/veb_studyja</loc>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>http://geekdev.ru/zakazat_sajt</loc>
+    <changefreq>weekly</changefreq>
+  </url>
+
+  <url>
+    <loc>http://geekdev.ru/sozdat_ynternet_magazyn</loc>
+    <changefreq>weekly</changefreq>
+  </url>
+
+  <url>
+    <loc>http://geekdev.ru/razrabotka_sajtov</loc>
+    <changefreq>weekly</changefreq>
+  </url>
+
   <url>
     <loc>http://geekdev.ru/бриф_на_разработку_сайта_geekdev.ru.docx</loc>
     <lastmod>2016-08-04T16:57:25+00:00</lastmod>

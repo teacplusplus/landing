@@ -9,8 +9,14 @@ Rails.application.routes.draw do
 
   resources :proposals
 
-  # get '/sozdat_sajt' => 'home#create_site'
-
+  get '/sozdanye_sajtov' => 'home#creating_site' #создание сайтов
+  get '/sajt_pod_kljuch' => 'home#turnkey_site' #сайт под ключ
+  get '/sozdat_sajt' => 'home#create_site' #создать сайт
+  get '/sozdanye_sajta_s_nulja' => 'home#creating_scratch_site' #создание сайта с нуля
+  get '/veb_studyja' => 'home#web_studio' #веб студия
+  get '/zakazat_sajt' => 'home#order_site' #заказать сайт
+  get '/sozdat_ynternet_magazyn' => 'home#create_shop' #создать интернет магазин
+  get '/razrabotka_sajtov' => 'home#development_site' #разработка сайтов
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

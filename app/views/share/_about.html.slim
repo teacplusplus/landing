@@ -1,9 +1,9 @@
 #about.gray-bg class="#{home_page? ? 'padding-top-bottom' : 'padding-top'}"
   .container
     h1.section-title
-      = t("meta.#{action_name}.h1")
-    p.section-description
-      = t("meta.#{action_name}.p")
+      == t("meta.#{action_name}.h1")
+    p.section-description style="text-align: left;"
+      == t("meta.#{action_name}.p").gsub('#', '<br/>')
     - if home_page?
       img.img-responsive.img-center.scrollimation.fade-up alt="Cайт под ключ" src=image_path('logo1.png')
       .row

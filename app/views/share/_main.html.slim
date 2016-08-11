@@ -12,14 +12,12 @@
         li
           a.scrollto href="#{root_path}#about"
             = t('navigation.about')
-        - if home_page?
-          li
-            a.scrollto href="#{root_path}#portfolio"
-              = t('navigation.porfolio')
-        - if home_page?
-          li
-            a.scrollto href="#{root_path}#pricing"
-              = t('navigation.pricing')
+        li
+          a.scrollto href="#{root_path}#portfolio"
+            = t('navigation.porfolio')
+        li
+          a.scrollto href="#{root_path}#pricing"
+            = t('navigation.pricing')
         li
           a.scrollto href="#{root_path}#contact"
             = t('navigation.contact')
