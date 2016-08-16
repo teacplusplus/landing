@@ -4,30 +4,32 @@
       == t("meta.#{action_name}.h1")
     p.section-description style="text-align: left;"
       == t("meta.#{action_name}.p").gsub('#', '<br/>')
-    - if home_page?
-      img.img-responsive.img-center.scrollimation.fade-up alt="Cайт под ключ" src=image_path('logo1.png')
-      .row
-        .col-sm-4
-          h2
-            = t('about.block1.h2')
-          p
-            = t('about.block1.p')
+    img.img-responsive.img-center.scrollimation.fade-up alt="Cайт под ключ" src=image_path('logo1.png')
+    .row
+      .col-sm-4
+        h2
+          = t('about.block1.h2')
+        p
+          = t('about.block1.p')
+          - if home_page?
             br
-            a.scrollto href="#features"
+            a.scrollto href="#{root_path}#features"
               = t('about.lean_more')
-        .col-sm-4
-          h2
-            = t('about.block2.h2')
-          p
-            = t('about.block2.p')
+      .col-sm-4
+        h2
+          = t('about.block2.h2')
+        p
+          = t('about.block2.p')
+          - if home_page?
             br
-            a.scrollto href="#features"
+            a.scrollto href="#{root_path}#features"
               = t('about.lean_more')
-        .col-sm-4
-          h2
-            = t('about.block3.h2')
-          p
-            = t('about.block3.p')
+      .col-sm-4
+        h2
+          = t('about.block3.h2')
+        p
+          = t('about.block3.p')
+          - if home_page?
             br
-            a.scrollto href="#features"
+            a.scrollto href="#{root_path}#features"
               = t('about.lean_more')
