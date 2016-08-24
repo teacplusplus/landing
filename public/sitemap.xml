@@ -32,13 +32,29 @@
     <loc>http://geekdev.ru/zakazat_sajt</loc>
     <changefreq>weekly</changefreq>
   </url>
-
   <url>
     <loc>http://geekdev.ru/sozdat_ynternet_magazyn</loc>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>http://geekdev.ru/razrabotka_sajtov</loc>
+    <changefreq>weekly</changefreq>
+  </url>
+
+  <url>
+    <loc>http://geekdev.ru/zakazat_lending</loc>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>http://geekdev.ru/razrabotka_sajtov_lendingov_veb_dizajn</loc>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>http://geekdev.ru/zakazat_internet_magazin</loc>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>http://geekdev.ru/zakazat_sajt_vizitku</loc>
     <changefreq>weekly</changefreq>
   </url>
 

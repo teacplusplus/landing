@@ -4,6 +4,9 @@
       == t("meta.#{action_name}.h1")
     p.section-description style="text-align: left;"
       == t("meta.#{action_name}.p").gsub('#', '<br/>')
+    p.text-center
+      a.btn.btn-quattro.scrollto href="#{root_path}#contact"
+        = t('about.leave_contact')
     img.img-responsive.img-center.scrollimation.fade-up alt="Cайт под ключ" src=image_path('logo1.png')
     .row
       .col-sm-4

@@ -18,6 +18,11 @@ Rails.application.routes.draw do
   get '/sozdat_ynternet_magazyn' => 'home#create_shop' #создать интернет магазин
   get '/razrabotka_sajtov' => 'home#development_site' #разработка сайтов
 
+  get 'zakazat_lending'  => 'home#order_landing_page' #заказать лендинг
+  get 'razrabotka_sajtov_lendingov_veb_dizajn'  => 'home#development_site_landing_page_web_design' #разработка сайтов лендингов веб дизайн
+  get 'zakazat_internet_magazin'  => 'home#order_shop' #заказать интернет магазин
+  get 'zakazat_sajt_vizitku'  => 'home#order_card_site' #заказать сайт визитку
+
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 

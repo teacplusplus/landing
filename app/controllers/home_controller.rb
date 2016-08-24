@@ -3,32 +3,21 @@ class HomeController < ApplicationController
 
   def creating_site;end
 
-  def turnkey_site
-    render 'home/creating_site'
-  end
-
-  def create_site
-    render 'home/creating_site'
-  end
-
-  def creating_scratch_site
-    render 'home/creating_site'
-  end
-
-  def web_studio
-    render 'home/creating_site'
-  end
-
-  def order_site
-    render 'home/creating_site'
-  end
-
-  def create_shop
-    render 'home/creating_site'
-  end
-
-  def development_site
-    render 'home/creating_site'
+  [:turnkey_site,
+   :create_site,
+   :creating_scratch_site,
+   :web_studio,
+   :order_site,
+   :create_shop,
+   :create_shop,
+   :development_site,
+   :order_landing_page,
+   :development_site_landing_page_web_design,
+   :order_shop,
+   :order_card_site].each do |method|
+    define_method method do
+      render 'home/creating_site'
+    end
   end
 
 end
