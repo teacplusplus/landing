@@ -14,7 +14,11 @@ class HomeController < ApplicationController
    :order_landing_page,
    :development_site_landing_page_web_design,
    :order_shop,
-   :order_card_site].each do |method|
+   :order_card_site,
+   :site_landing,
+   :direct_adwords,
+   :create_landing_page
+  ].each do |method|
     define_method method do
       render 'home/creating_site'
     end

@@ -23,6 +23,13 @@ Rails.application.routes.draw do
   get 'zakazat_internet_magazin'  => 'home#order_shop' #заказать интернет магазин
   get 'zakazat_sajt_vizitku'  => 'home#order_card_site' #заказать сайт визитку
 
+
+
+  get 'sajt_vizitka'  => 'home#site_landing' #сайт визитка
+  get 'yandex_direct_and_google_adwords'  => 'home#direct_adwords' #яндекс директ и гугл адвордс
+  get 'sozdanie_lendinga'  => 'home#create_landing_page' #создание лендинга
+
+
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 

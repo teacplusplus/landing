@@ -40,7 +40,6 @@
     <loc>http://geekdev.ru/razrabotka_sajtov</loc>
     <changefreq>weekly</changefreq>
   </url>
-
   <url>
     <loc>http://geekdev.ru/zakazat_lending</loc>
     <changefreq>weekly</changefreq>
@@ -57,7 +56,18 @@
     <loc>http://geekdev.ru/zakazat_sajt_vizitku</loc>
     <changefreq>weekly</changefreq>
   </url>
-
+  <url>
+    <loc>http://geekdev.ru/sajt_vizitka</loc>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>http://geekdev.ru/yandex_direct_and_google_adwords</loc>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>http://geekdev.ru/sozdanie_lendinga</loc>
+    <changefreq>weekly</changefreq>
+  </url>
   <url>
     <loc>http://geekdev.ru/бриф_на_разработку_сайта_geekdev.ru.docx</loc>
     <lastmod>2016-08-04T16:57:25+00:00</lastmod>
